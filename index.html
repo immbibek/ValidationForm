@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Visa Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Apply Now</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <h1>Student Visa Application</h1>
+
+        <form id="visaForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <span id="nameError" class="error"></span>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <span id="dobError" class="error"></span>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="emailError" class="error"></span>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            <span id="phoneError" class="error"></span>
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" required>
+            <span id="pincodeError" class="error"></span>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+            <span id="addressError" class="error"></span>
+
+            <label for="passport">Upload Passport Copy:</label>
+            <input type="file" id="passport" name="passport" class="file-upload" required>
+            <span id="fileError" class="error"></span>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
